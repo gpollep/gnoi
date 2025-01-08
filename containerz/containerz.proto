@@ -341,7 +341,8 @@ message ListContainerResponse {
   // The computed hash of the image as returned by the container runtime.
   types.HashType hash = 6;
 
-  // Displays the container's runtime parameters.
+  // Displays the container parameters set via StartContainer/UpdateContainer.
+  // Return empty if no parameters were set.
   StartContainerRequest params = 7;
 }
 
