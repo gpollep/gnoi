@@ -340,6 +340,9 @@ message ListContainerResponse {
 
   // The computed hash of the image as returned by the container runtime.
   types.HashType hash = 6;
+
+  // Displays the container's runtime parameters.
+  StartContainerRequest params = 7;
 }
 
 // A volume can be passed to a container such that it can persist data.
